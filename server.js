@@ -5,7 +5,7 @@ const path = require(`path`);
 
 const PORT = config.PORT | process.env.PORT;
 
-server.enable(`trust-proxy`, config.trust_proxy);
+server.enable(`trust proxy`, config.trust_proxy);
 
 server.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);
