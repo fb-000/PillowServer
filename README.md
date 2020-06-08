@@ -9,4 +9,4 @@ A simple yet powerful express webserver for all your needs.
 * Open `localhost:port` in your browser and Enjoy!
 * (Upload the files to your host and then you get a online running webserver)
 # Contact
-You can contact, you can contact me at discord (Phoenix852#4838), or email me at dasmon852@gmail.com
+You can contact, you can contact always contact me via https://contact.phoenix852.rf.gd/ or, alternatively you can email me at dasmon852@gmail.com OR just ask me at discord (Phoenix852#4838)
