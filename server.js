@@ -7,6 +7,10 @@ const PORT = config.PORT | process.env.PORT;
 
 server.enable(`trust proxy`, config.trust_proxy);
 
+server.use((req, res, next) => {
+           res.status(404).sendStatus(404);
+           })
+
 server.listen(PORT, () => {
     console.log(`Server listening on ${PORT}`);
 });
@@ -24,6 +28,5 @@ server.get(`/:page`, (req, res) => {
         )
 
         let page = req.params.page;
-        if(!fs.existsSync(path.join(__dirname + `${config.static}/${page}.html`))) return res.sendStatus(404);
-        res.sendFile(path.join(__dirname + `${config.static}/${page}.html`));
+        if(fs.existsSync(path.join(__dirname + `${config.static}/${page}.html`))) return res.sendFile(path.join(__dirname + `${config.static}/${page}.html`));
 })
